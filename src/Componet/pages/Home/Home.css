@@ -1,0 +1,287 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-Container {
+  width: 100%;
+  height: 100vh;
+  background:
+    linear-gradient(
+      rgba(8, 12, 25, 0.78),
+      rgba(8, 12, 25, 0.88)
+    ),
+    url("../../../assets/Home/ustatop-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+
+.home-logo h1 {
+  font-size: 95px;
+  font-weight: 800;
+  background: linear-gradient(
+    90deg,
+    #78e4ff,
+    #ffffff,
+    #8c6dff
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-bottom: 25px;
+}
+
+
+.home-h2 {
+  max-width: 900px;
+}
+
+.home-h2 h2 {
+  color: white;
+
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+
+.home-p {
+  max-width: 900px;
+}
+
+.home-p p {
+  color: #cfcfcf;
+
+  font-size: 20px;
+
+  line-height: 1.8;
+
+  margin-bottom: 50px;
+}
+
+
+.home-input {
+  width: 100%;
+  max-width: 850px;
+
+  position: relative;
+
+  margin-bottom: 45px;
+}
+
+.home-input input {
+  width: 100%;
+  height: 75px;
+  border-radius: 50px;
+  border: 2px solid rgba(255,255,255,.08);
+  outline: none;
+  background: rgba(24,27,40,.88);
+  color: white;
+  padding: 0 200px 0 35px;
+  font-size: 18px;
+  transition: .35s;
+}
+
+.home-input input::placeholder{
+  color:#a6a6a6;
+}
+
+.home-input input:focus{
+  border-color:#59d6ff;
+  box-shadow:0 0 30px rgba(89,214,255,.35);
+}
+
+
+.home-input::after{
+
+  content:"Qidirish";
+
+  position:absolute;
+  right:10px;
+  top:10px;
+  width:150px;
+  height:55px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:40px;
+  background:linear-gradient(90deg,#7f3cff,#00d4ff);
+  color:white;
+  font-weight:700;
+  cursor:pointer;
+  transition:.35s;
+}
+
+.home-input:hover::after{
+  transform:scale(1.05);
+  box-shadow:0 10px 25px rgba(0,212,255,.3);
+}
+
+
+.home-btn{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.home-btn button{
+  width:220px;
+  height:60px;
+  border-radius:40px;
+  font-size: 18px;
+  font-weight:700;
+  cursor:pointer;
+  transition:.35s;
+}
+
+
+.home-btn button:first-child{
+  border:none;
+  color:#111;
+  background:white;
+}
+
+.home-btn button:first-child:hover{
+  transform:translateY(-4px);
+  box-shadow:0 15px 30px rgba(255,255,255,.25);
+}
+
+
+.home-btn button:last-child{
+  background:transparent;
+  border:2px solid white;
+  color:white;
+}
+
+.home-btn button:last-child:hover{
+  background:white;
+  color:#111;
+  transform:translateY(-4px);
+}
+
+
+@media(max-width:992px){
+
+.home-logo h1{
+
+font-size:70px;
+
+}
+
+.home-h2 h2{
+
+font-size:45px;
+
+}
+
+.home-p p{
+
+font-size:18px;
+
+}
+
+}
+
+
+@media(max-width:768px){
+.home-Container{
+padding:90px 20px;
+}
+.home-logo h1{
+font-size:55px;
+}
+
+.home-h2 h2{
+
+font-size:34px;
+
+}
+
+.home-p p{
+
+font-size:16px;
+
+}
+
+.home-input{
+
+max-width:100%;
+}
+
+.home-input input{
+
+height:65px;
+
+padding:0 20px;
+
+}
+
+.home-input::after{
+
+position:static;
+
+width:100%;
+
+height:55px;
+
+margin-top:15px;
+
+}
+
+.home-btn{
+
+flex-direction:column;
+
+align-items:center;
+
+width:100%;
+}
+
+.home-btn button{
+
+width:100%;
+
+max-width:350px;
+}
+
+}
+
+
+@media(max-width:480px){
+
+.home-logo h1{
+
+font-size:45px;
+
+}
+
+.home-h2 h2{
+
+font-size:28px;
+
+}
+
+.home-p p{
+
+font-size:15px;
+
+line-height:1.7;
+
+}
+
+}

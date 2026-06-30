@@ -1,0 +1,348 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Inter",sans-serif;
+    background:#0b0d15;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.Dashboard-container{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    background:
+    radial-gradient(circle at left,#24153d 0%,transparent 45%),
+    radial-gradient(circle at right,#071f28 0%,transparent 45%),
+    #0d1018;
+
+}
+
+/* ===========================
+   LOGIN TEXT
+=========================== */
+
+.Dashboard-login{
+
+    margin-bottom:22px;
+
+}
+
+.Dashboard-login h4{
+
+    color:#29d5ff;
+
+    font-size:15px;
+
+    text-transform:uppercase;
+
+    letter-spacing:6px;
+
+    font-weight:700;
+
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.Dashboard-korish{
+
+    width:100%;
+    max-width:760px;
+
+    margin-bottom:28px;
+
+}
+
+.Dashboard-korish h1{
+
+    color:white;
+
+    font-size: 35px;
+
+    line-height:1.08;
+
+    font-weight:800;
+
+}
+
+
+
+.Dashboard-rela{
+
+    width:100%;
+    max-width:760px;
+
+    margin-bottom:50px;
+
+}
+
+.Dashboard-rela p{
+
+    color:#9fa5b7;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   BUTTON AREA
+=========================== */
+
+.Dashboard-button{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.Dashboard-button button{
+
+    width:180px;
+
+    height:62px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+/* ===========================
+   FIRST BUTTON
+=========================== */
+
+.Dashboard-button button:first-child{
+
+    border:none;
+
+    background:white;
+
+    color:#111827;
+
+}
+
+.Dashboard-button button:first-child:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(255,255,255,.18);
+
+}
+
+/* ===========================
+   SECOND BUTTON
+=========================== */
+
+.Dashboard-button button:last-child{
+
+    background:transparent;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.18);
+
+}
+
+.Dashboard-button button:last-child:hover{
+
+    background:white;
+
+    color:#111827;
+
+    transform:translateY(-5px);
+
+}
+
+/* ===========================
+   ANIMATION
+=========================== */
+
+.Dashboard-login,
+.Dashboard-korish,
+.Dashboard-rela,
+.Dashboard-button{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+.Dashboard-korish{
+
+    animation-delay:.15s;
+
+}
+
+.Dashboard-rela{
+
+    animation-delay:.3s;
+
+}
+
+.Dashboard-button{
+
+    animation-delay:.45s;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(max-width:992px){
+
+.Dashboard-korish h1{
+
+    font-size:54px;
+
+}
+
+.Dashboard-rela p{
+
+    font-size:19px;
+
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.Dashboard-container{
+
+    padding:70px 25px;
+
+}
+
+.Dashboard-login h4{
+
+    font-size:13px;
+
+    letter-spacing:4px;
+
+}
+
+.Dashboard-korish h1{
+
+    font-size:38px;
+
+}
+
+.Dashboard-rela{
+
+    margin-bottom:35px;
+
+}
+
+.Dashboard-rela p{
+
+    font-size:17px;
+
+    line-height:1.7;
+
+}
+
+.Dashboard-button{
+
+    flex-direction:column;
+
+    width:100%;
+
+}
+
+.Dashboard-button button{
+
+    width:100%;
+
+    max-width:320px;
+
+}
+
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media(max-width:480px){
+
+.Dashboard-korish h1{
+
+    font-size:30px;
+
+}
+
+.Dashboard-rela p{
+
+    font-size:15px;
+
+}
+
+}
