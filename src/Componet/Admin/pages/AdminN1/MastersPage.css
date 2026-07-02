@@ -1,0 +1,47 @@
+.masters-grid-page {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.master-card-page {
+  background: rgba(255,255,255,0.035);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 20px;
+  padding: 18px;
+}
+
+.master-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.master-card-header h3 {
+  margin: 0;
+}
+
+.master-card-header p {
+  margin: 4px 0 0;
+  color: #94a3b8;
+}
+
+.master-card-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.master-location {
+  color: #e2e8f0;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 900px) {
+  .masters-grid-page {
+    grid-template-columns: 1fr;
+  }
+}

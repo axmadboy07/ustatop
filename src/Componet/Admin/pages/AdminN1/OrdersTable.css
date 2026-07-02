@@ -1,0 +1,68 @@
+.table-panel {
+  overflow: hidden;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+}
+
+th,
+td {
+  padding: 12px 8px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+th {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+td {
+  color: #f8fafc;
+}
+
+.status-pill {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.status-pill.pending {
+  background: rgba(245, 158, 11, 0.16);
+  color: #fbbf24;
+}
+
+.status-pill.completed {
+  background: rgba(34, 197, 94, 0.16);
+  color: #86efac;
+}
+
+.status-pill.cancelled {
+  background: rgba(239, 68, 68, 0.16);
+  color: #fda4af;
+}
+
+.status-pill.working {
+  background: rgba(37, 99, 235, 0.16);
+  color: #93c5fd;
+}
+
+.table-action {
+  border: 0;
+  border-radius: 999px;
+  padding: 7px 10px;
+  color: #fff;
+  background: rgba(37, 99, 235, 0.16);
+  cursor: pointer;
+}

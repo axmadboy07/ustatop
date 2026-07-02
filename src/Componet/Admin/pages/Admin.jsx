@@ -1,11 +1,8 @@
 import React from "react";
+import Dashboard from "./AdminN1/Dashboard";
 
 const Admin = () => {
-  return (
-    <div>
-      <h1>Admin Panel</h1>
-    </div>
-  );
+  return <Dashboard />;
 };
 
 export default Admin;

@@ -1,0 +1,63 @@
+.notifications-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge {
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.16);
+  color: #93c5fd;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 260px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.notif-card {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.notif-card h3 {
+  margin: 0 0 3px;
+  font-size: 0.95rem;
+}
+
+.notif-card p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.84rem;
+}
+
+.notif-dot {
+  width: 10px;
+  height: 10px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background: #2563eb;
+}
+
+.notif-card.high .notif-dot {
+  background: #22c55e;
+}
+
+.notif-card.medium .notif-dot {
+  background: #f59e0b;
+}
+
+.notif-card.urgent .notif-dot {
+  background: #ef4444;
+}

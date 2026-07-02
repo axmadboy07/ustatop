@@ -1,0 +1,116 @@
+.panel {
+  background: linear-gradient(145deg, rgba(24, 24, 27, 0.95), rgba(17, 24, 39, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.23);
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.panel-kicker {
+  color: #60a5fa;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+
+.panel-heading h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.ghost-btn {
+  border: 1px solid #27272a;
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  border-radius: 999px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 14px;
+}
+
+.chart-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 14px;
+}
+
+.large-chart {
+  grid-row: span 2;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  color: #94a3b8;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+.chart-header strong {
+  color: #fff;
+}
+
+.chart-surface {
+  height: 220px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.18), rgba(255, 255, 255, 0.02));
+  position: relative;
+  overflow: hidden;
+}
+
+.line-chart {
+  position: absolute;
+  inset: 20px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, transparent 0%, transparent 35%, rgba(37, 99, 235, 0.6) 35%, rgba(37, 99, 235, 0.95) 100%);
+  clip-path: polygon(0 80%, 15% 72%, 30% 76%, 45% 58%, 60% 62%, 77% 32%, 100% 20%, 100% 100%, 0 100%);
+}
+
+.bar-chart {
+  height: 100px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #2563eb, #22c55e);
+  clip-path: polygon(0 100%, 0 70%, 20% 72%, 20% 50%, 40% 55%, 40% 35%, 60% 40%, 60% 20%, 80% 25%, 80% 10%, 100% 0, 100% 100%);
+}
+
+.mini-stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+}
+
+.mini-stat h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.mini-stat p {
+  margin: 6px 0 0;
+  color: #94a3b8;
+}
+
+@media (max-width: 900px) {
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .large-chart {
+    grid-row: auto;
+  }
+}
