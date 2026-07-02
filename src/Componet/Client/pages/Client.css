@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.client-home{
+    width:100%;
+    min-height:100vh;
+    background:#070B14;
+    color:#fff;
+    font-family:"Inter",sans-serif;
+    padding:40px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.client-hero{
+    width:100%;
+    background:linear-gradient(135deg,#101828,#1E293B);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:30px;
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+    margin-bottom:60px;
+    overflow:hidden;
+    position:relative;
+}
+
+.client-hero::before{
+    content:"";
+    position:absolute;
+    width:280px;
+    height:280px;
+    background:#2563eb;
+    filter:blur(120px);
+    top:-120px;
+    right:-120px;
+    opacity:.25;
+}
+
+.client-badge{
+    display:inline-block;
+    background:#2563eb22;
+    color:#4F8CFF;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.client-hero h1{
+    font-size:52px;
+    font-weight:800;
+    line-height:1.2;
+    max-width:700px;
+}
+
+.client-hero p{
+    margin-top:20px;
+    color:#AAB3C5;
+    font-size:18px;
+    max-width:650px;
+    line-height:1.8;
+}
+
+.client-search{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.client-search input{
+    flex:1;
+    height:60px;
+    border:none;
+    outline:none;
+    background:#111827;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:0 22px;
+    color:white;
+    font-size:16px;
+    transition:.3s;
+}
+
+.client-search input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 4px rgba(37,99,235,.2);
+}
+
+.client-search button{
+    width:180px;
+    border:none;
+    border-radius:18px;
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+    color:white;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.client-search button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 18px 40px rgba(37,99,235,.4);
+}
+
+/* =========================
+   CATEGORY
+========================= */
+
+.client-category{
+    margin-bottom:70px;
+}
+
+.client-category h2{
+    font-size:34px;
+    margin-bottom:35px;
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.category-card{
+    background:#111827;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:35px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+    font-size:46px;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.category-card span{
+    font-size:18px;
+    font-weight:600;
+}
+
+.category-card:hover{
+    transform:translateY(-8px);
+    border-color:#2563eb;
+    background:#172036;
+}
+
+/* =========================
+   MASTER
+========================= */
+
+.client-master h2{
+    font-size:34px;
+    margin-bottom:35px;
+}
+
+.master-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.master-card{
+    background:#111827;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:30px;
+    transition:.35s;
+}
+
+.master-card:hover{
+    transform:translateY(-8px);
+    border-color:#2563eb;
+}
+
+.master-card h3{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.master-card p{
+    color:#FFD54A;
+    margin-bottom:10px;
+}
+
+.master-card span{
+    color:#9CA3AF;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:992px){
+
+.client-home{
+    padding:25px;
+}
+
+.client-hero{
+    padding:40px;
+}
+
+.client-hero h1{
+    font-size:42px;
+}
+
+.category-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.master-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.client-home{
+    padding:20px;
+}
+
+.client-hero{
+    padding:30px;
+}
+
+.client-hero h1{
+    font-size:34px;
+}
+
+.client-hero p{
+    font-size:16px;
+}
+
+.client-search{
+    flex-direction:column;
+}
+
+.client-search button{
+    width:100%;
+    height:56px;
+}
+
+.category-grid{
+    grid-template-columns:1fr;
+}
+
+.master-grid{
+    grid-template-columns:1fr;
+}
+
+.client-category h2,
+.client-master h2{
+    font-size:28px;
+}
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:480px){
+
+.client-home{
+    padding:15px;
+}
+
+.client-hero{
+    padding:22px;
+    border-radius:20px;
+}
+
+.client-badge{
+    font-size:13px;
+}
+
+.client-hero h1{
+    font-size:28px;
+}
+
+.client-hero p{
+    font-size:15px;
+}
+
+.client-search input{
+    height:55px;
+}
+
+.category-card{
+    padding:28px;
+}
+
+.master-card{
+    padding:24px;
+}
+
+}
+
+/*=========================
+TOP MASTERS
+=========================*/
+
+.top-masters{
+
+    margin-top:90px;
+}
+
+.section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+}
+
+.section-header h2{
+
+    font-size:34px;
+
+    color:white;
+}
+
+.section-header button{
+
+    border:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.section-header button:hover{
+
+    background:#1D4ED8;
+}
+
+.masters-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+}
+
+.master-card{
+
+    background:#111827;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+}
+
+.master-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#2563eb;
+}
+
+.master-card img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+}
+
+.master-card h3{
+
+    margin:20px 20px 8px;
+
+    color:white;
+
+    font-size:22px;
+}
+
+.master-card p{
+
+    margin:0 20px;
+
+    color:#94A3B8;
+}
+
+.master-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:20px;
+
+    color:#FFD54A;
+
+    font-weight:600;
+}
+
+.master-card button{
+
+    width:calc(100% - 40px);
+
+    margin:0 20px 20px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.master-card button:hover{
+
+    background:#1D4ED8;
+}
